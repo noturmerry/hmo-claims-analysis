@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project analyzes simulated healthcare claims data to examine healthcare utilization, claim spending, provider performance, member characteristics, claim outcomes, processing patterns, and high-cost claims.
+This project analyzes simulated healthcare claims data to examine healthcare utilization, claim spending, provider activity, member characteristics, claim outcomes, processing patterns, and high-cost claims.
 
 The project demonstrates an end-to-end Data Analytics workflow using **Python, SQL, and Power BI**, with a focus on business-oriented healthcare and HMO analysis.
 
@@ -184,7 +184,9 @@ Monthly claim volume ranged from approximately **3,808 to 4,292 claims** during 
 
 February recorded the lowest claim volume, while August recorded the highest claim volume.
 
-Total monthly claim spending ranged from approximately **₱184.71 million to ₱216.68 million**.
+Total monthly claim spending ranged from approximately **₱18.47 million to ₱21.67 million**.
+
+October recorded the highest monthly claim spending, while February recorded the lowest.
 
 ### Service Type
 
@@ -192,13 +194,15 @@ Inpatient services generated the highest total claim spending at approximately *
 
 Outpatient services had the highest claim volume with **17,388 claims**.
 
+This demonstrates that the service type with the highest utilization volume was not necessarily the service type with the highest financial impact.
+
 ### Provider Performance
 
 Provider A recorded the highest total claim spending at approximately **₱31.62 million**.
 
 Provider H recorded the highest claim volume with **6,395 claims**, while Provider D recorded the lowest with **6,114 claims**.
 
-Provider-level average claim amounts and processing times were relatively consistent across providers.
+Provider-level average claim amounts and processing times were relatively consistent across providers in the simulated dataset.
 
 ### Member Utilization
 
@@ -251,20 +255,55 @@ The SQL results were compared with corresponding Python analyses to confirm cons
 
 ## Power BI Dashboard
 
-A Power BI dashboard will be developed to provide an interactive view of the key HMO claims metrics and business findings.
+The Power BI dashboard provides an interactive view of the key HMO claims metrics and business findings.
 
-Planned dashboard components include:
+### Page 1 — HMO Claims Performance Dashboard
+
+The first dashboard page focuses on overall claims performance and healthcare utilization.
+
+Key components include:
 
 - Total Members
 - Total Claims
 - Total Claim Amount
 - Average Claim Amount
-- Monthly Claim Trends
-- Claim Spending by Service Type
-- Provider Performance
-- Member Utilization
+- Approval Rate
+- Monthly Claim Volume
+- Total Claim Amount by Service Type
 - Claim Status Distribution
-- High-Cost Claim Analysis
+- Total Claim Amount by Provider
+- Member Utilization by Age Group
+
+### Page 2 — Claims Risk & Operations
+
+The second dashboard page focuses on high-cost claims, financial exposure, and operational performance.
+
+Key components include:
+
+- High-Cost Claims
+- High-Cost Spending
+- Average Claim Amount
+- Average Processing Days
+- High-Cost Claims by Service Type
+- Denial Rate by Service Type
+- Average Processing Days by Service Type
+
+### Dashboard Highlights
+
+The dashboard allows users to explore:
+
+- Overall claim performance
+- Healthcare spending patterns
+- Service-level cost differences
+- Claim outcomes
+- High-cost claim concentration
+- Provider activity
+- Processing performance
+- Member utilization patterns
+
+The Power BI dashboard file is available in the repository under:
+
+`dashboard/HMO_Claims_Dashboard.pbix`
 
 ---
 
@@ -287,12 +326,17 @@ Planned dashboard components include:
 hmo-claims-analysis/
 │
 ├── HMO_Claims_Analytics.ipynb
+├── README.md
+│
 ├── data/
 │   └── README.md
+│
 ├── sql/
 │   └── hmo_claims_analysis.sql
+│
 ├── dashboard/
 │   └── HMO_Claims_Dashboard.pbix
+│
 └── visualizations/
     ├── monthly_claim_volume.png
     ├── monthly_claim_cost.png
@@ -333,6 +377,7 @@ The project demonstrates practical Data Analyst skills in:
 - SQL querying
 - Relational data analysis
 - Data visualization
+- Dashboard development
 - Business-oriented interpretation
 
 The workflow demonstrates how healthcare claims data can be transformed into structured metrics and insights that support monitoring of utilization, costs, claim outcomes, and operational performance.
