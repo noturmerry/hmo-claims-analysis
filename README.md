@@ -306,6 +306,33 @@ The Power BI dashboard file is available in the repository under:
 `dashboard/HMO_Claims_Dashboard.pbix`
 
 ---
+---
+
+## Visualizations
+
+The project includes several visualizations developed during the Python analysis to examine claims trends, spending patterns, service types, provider activity, and high-cost claims.
+
+### Monthly Claim Volume
+
+![Monthly Claim Volume](visualizations/monthly_claim_volume.png)
+
+### Monthly Claim Spending
+
+![Monthly Claim Spending](visualizations/monthly_claim_cost.png)
+
+### Service Type Analysis
+
+![Service Type Analysis](visualizations/service_type_analysis.png)
+
+### Provider Analysis
+
+![Provider Analysis](visualizations/provider_analysis.png)
+
+### High-Cost Claims
+
+![High-Cost Claims](visualizations/high_cost_claims.png)
+
+---
 
 ## Tools Used
 
